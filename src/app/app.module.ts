@@ -1,18 +1,20 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {NgModule, OnInit} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {FormsModule} from '@angular/forms';
+import {BillComponent} from "./bill.component";
+import {BillService} from "./services/bill.service";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, BillComponent
   ],
   imports: [
     BrowserModule, FormsModule
   ],
-  providers: [],
+  providers: [BillService],
   bootstrap: [AppComponent]
 })
-export class AppModule {
+export class AppModule{
 }

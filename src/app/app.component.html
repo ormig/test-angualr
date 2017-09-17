@@ -1,11 +1,6 @@
 <h1>My bills</h1>
 <div *ngIf="selectedBill">
-  <div><label>id: </label>{{selectedBill.id}}</div>
-  <div>
-    <label>Name:</label>
-    <input [(ngModel)]="selectedBill.name" placeholder="Name"/>
-  </div>
-  <div><label>currency:</label> {{selectedBill.currency}}</div>
+  <app-bill [bill]="selectedBill"></app-bill>
 </div>
 <ul class="bills">
   <li *ngFor="let bill of bills"
