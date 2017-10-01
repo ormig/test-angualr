@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.billService.getBills().then(bills => this.bills = bills);
+    this.billService.getBillsSlowly().then(bills => this.bills = bills);
   }
 
   select(bill: Bill) {

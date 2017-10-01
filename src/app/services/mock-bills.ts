@@ -8,4 +8,4 @@ export const BILLS: Bill[] = [
   {id: 4, name: 'Tinkoff', currency: 'RUB'},
   {id: 5, name: 'Tinkoff', currency: 'USD'},
   {id: 6, name: 'Tinkoff', currency: 'EUR'}
-]
+];

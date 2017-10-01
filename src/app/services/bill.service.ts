@@ -7,4 +7,10 @@ export class BillService {
   getBills(): Promise<Bill[]> {
     return Promise.resolve(BILLS);
   }
+
+  getBillsSlowly(): Promise<Bill[]> {
+    return new Promise(resolve => {
+      setTimeout(() => resolve(this.getBills()), 4000);
+    });
+  }
 }

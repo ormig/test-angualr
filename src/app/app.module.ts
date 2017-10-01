@@ -16,5 +16,5 @@ import {BillService} from "./services/bill.service";
   providers: [BillService],
   bootstrap: [AppComponent]
 })
-export class AppModule{
+export class AppModule {
 }
